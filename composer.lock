@@ -1,0 +1,188 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "6ecc849e2b1c20fd93c77c3f19d2427b",
+    "packages": [
+        {
+            "name": "facebook/php-sdk",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/facebook/facebook-php-sdk.git",
+                "reference": "7ea7c6b48afa15fc65aa6e7e56d1ad0bfbc6dadd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/facebook/facebook-php-sdk/zipball/7ea7c6b48afa15fc65aa6e7e56d1ad0bfbc6dadd",
+                "reference": "7ea7c6b48afa15fc65aa6e7e56d1ad0bfbc6dadd",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "php": ">=5.2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache2"
+            ],
+            "authors": [
+                {
+                    "name": "Facebook",
+                    "homepage": "https://github.com/facebook/facebook-php-sdk/contributors"
+                }
+            ],
+            "description": "Facebook PHP SDK",
+            "homepage": "https://github.com/facebook/facebook-php-sdk",
+            "keywords": [
+                "facebook",
+                "sdk"
+            ],
+            "time": "2013-11-12 21:33:02"
+        },
+        {
+            "name": "jbboehr/facebook-php-cli",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jbboehr/facebook-php-cli.git",
+                "reference": "f9601ae3fdb842f9435e37fd87b32ab20830bc20"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jbboehr/facebook-php-cli/zipball/f9601ae3fdb842f9435e37fd87b32ab20830bc20",
+                "reference": "f9601ae3fdb842f9435e37fd87b32ab20830bc20",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "facebook/php-sdk": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "cli_facebook.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "John Boehr",
+                    "homepage": "https://github.com/jbboehr"
+                }
+            ],
+            "description": "Facebook PHP SDK Wrapper for CLI",
+            "homepage": "https://github.com/jbboehr/facebook-php-cli",
+            "keywords": [
+                "cli",
+                "facebook",
+                "sdk"
+            ],
+            "time": "2013-05-16 06:03:08"
+        },
+        {
+            "name": "oliverlorenz/facebook-client",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oliverlorenz/FacebookClient.git",
+                "reference": "3d622dad27c9adbf6fc3eb9ce3aeb9207ff2e922"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oliverlorenz/FacebookClient/zipball/3d622dad27c9adbf6fc3eb9ce3aeb9207ff2e922",
+                "reference": "3d622dad27c9adbf6fc3eb9ce3aeb9207ff2e922",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/php-sdk": "dev-master",
+                "jbboehr/facebook-php-cli": "~1.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "OliverLorenz\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Oliver Lorenz",
+                    "email": "mail@oliverlorenz.com"
+                }
+            ],
+            "time": "2013-11-11 19:35:58"
+        },
+        {
+            "name": "oliverlorenz/facebook-event",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oliverlorenz/FacebookEvent.git",
+                "reference": "da92fe1b603c705dac3dc6f32ac8add8004c4dfe"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oliverlorenz/FacebookEvent/zipball/da92fe1b603c705dac3dc6f32ac8add8004c4dfe",
+                "reference": "da92fe1b603c705dac3dc6f32ac8add8004c4dfe",
+                "shasum": ""
+            },
+            "require": {
+                "facebook/php-sdk": "dev-master",
+                "jbboehr/facebook-php-cli": "~1.0.0",
+                "oliverlorenz/facebook-client": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "OliverLorenz\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Oliver Lorenz",
+                    "email": "mail@oliverlorenz.com"
+                }
+            ],
+            "time": "2013-11-13 23:13:17"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "oliverlorenz/facebook-event": 20,
+        "oliverlorenz/facebook-client": 20,
+        "facebook/php-sdk": 20
+    },
+    "platform": [
+
+    ],
+    "platform-dev": [
+
+    ]
+}

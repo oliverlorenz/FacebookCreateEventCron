@@ -1,0 +1,45 @@
+{
+    "schedule": {
+        "weekly": {
+            "monday": {
+                "events" : [
+                    {
+                        "create_time": "21:00",
+                        "event" : {
+                            "name": "Bouldern in der Nordwandhalle (Montag)",
+                            "start_time": "today +7day 19:00",
+                            "end_time": "today +7day 23:00",
+                            "description" : "",
+                            "privacy_type": "SECRET",
+                            "location_id": "242743229150833"
+                        },
+                        "link_from": [
+                            -1,
+                            -2
+                        ]
+                    }
+                ]
+            },
+            "thursday": {
+                "events" : [
+                    {
+                        "create_time": "21:00",
+                        "event" : {
+                            "name": "Bouldern in der Nordwandhalle (Donnerstag)",
+                            "start_time": "today +7day 19:00",
+                            "end_time": "today +7day 23:00",
+                            "description" : "",
+                            "privacy_type": "SECRET",
+                            "location_id": "242743229150833"
+                        },
+                        "link_from": [
+                            -1,
+                            -2
+                        ]
+                    }
+                ]
+            }
+        }
+    },
+    "events": []
+}
