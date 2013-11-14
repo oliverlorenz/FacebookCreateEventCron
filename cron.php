@@ -14,7 +14,7 @@ foreach($config['schedule']['weekly'] as $weekdayName => $weekdayData) {
             if(1 || date('H:i') == $event['create_time']) {
                 $appId = '520309608065358';
                 $secret = '22891fe8352eac31bdfb4778b410065b';
-                $accessToken = 'CAAHZAOAVcqU4BAA95UGTZCzJescyDIiZBaVAxjlXKMavzdKE8GZAGcWO732ObabrwC5zXrsL46oxdpBLXdTJ66nLnvt04Gi4bl0SOfwZC7qpG2jlNPOsuK2JqEXs4DJJBV7ottxJ9QL80TRhYMhlJwSZCyeRCFB4SK8SrRL5XN48bVqZBpB7RF83iCtl8mBOR0ZD';
+                $accessToken = 'CAAHZAOAVcqU4BALPDFJ62ozr1ZCTxfGBwDZBBpmuMIRWPvgESsZBM1uzZAMNuaiAj0pwZAPBOjhNyQRXSxvcICpZA0ZAprEOPL3perZAG7SvsmnwrAuMw9lowqVxDLpJ3kc5sXUlV4vTjC8GlbirZAXSq3XcAidGIGNlYF3q19DWu41cdbZCzR3clbxyxDX4vvrqRJolN5Dh8i9TAZDZD';
 
                 $facebookCredentials = new OliverLorenz\Facebook\Credentials();
                 $facebookCredentials->setAppId($appId);
@@ -46,8 +46,20 @@ foreach($config['schedule']['weekly'] as $weekdayName => $weekdayData) {
                 }
                 $facebookEventId = $facebookEvent->create();
                 $config['events'][] = $facebookEventId;
+                if(isset($event['link_from'])) {
+                    $count = count($config['events']) - 1;
+
+                    foreach($event['link_from'] as $index => $negativeIndex) {
+
+                        $post = new \OliverLorenz\Facebook\Post();
+                        $post->setLink("http://www.facebook.com/events/" . $facebookEventId);
+
+                        $linkedEventId = $config['events'][$count + $negativeIndex];
+                        $facebookClient->api($linkedEventId . '/feed', 'post', $post->getAsArray());
+                    }
+                }
             }
         }
     }
-    echo json_encode($config);
+    file_put_contents('config.json', json_encode($config));
 }
