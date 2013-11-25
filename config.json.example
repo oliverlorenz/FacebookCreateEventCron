@@ -9,14 +9,10 @@
                             "name": "Bouldern in der Nordwandhalle (Montag)",
                             "start_time": "today +7day 19:00",
                             "end_time": "today +7day 23:00",
-                            "description" : "",
-                            "privacy_type": "SECRET",
+                            "description" : "Treff ist an der S-Bahn-Station Wilhelmsburg zu der genannten Uhrzeit, oberhalb der Treppen.\n\nGewartet wird (max. 10min) nur auf Leute die zugesagt haben.\n\nEin paar kleine Informationen für die Neulinge unter euch:\nhttps://docs.google.com/document/d/1xloIpuIqZef4AjMXZel6KCRO9zBN_cr5C2qLDxIy7gE/pub",
+                            "privacy_type": "OPEN",
                             "location_id": "242743229150833"
-                        },
-                        "link_from": [
-                            -1,
-                            -2
-                        ]
+                        }
                     }
                 ]
             },
@@ -28,14 +24,10 @@
                             "name": "Bouldern in der Nordwandhalle (Donnerstag)",
                             "start_time": "today +7day 19:00",
                             "end_time": "today +7day 23:00",
-                            "description" : "",
-                            "privacy_type": "SECRET",
+                            "description" : "Treff ist an der S-Bahn-Station Wilhelmsburg zu der genannten Uhrzeit, oberhalb der Treppen.\n\nGewartet wird (max. 10min) nur auf Leute die zugesagt haben.\n\nEin paar kleine Informationen für die Neulinge unter euch:\nhttps://docs.google.com/document/d/1xloIpuIqZef4AjMXZel6KCRO9zBN_cr5C2qLDxIy7gE/pub",
+                            "privacy_type": "OPEN",
                             "location_id": "242743229150833"
-                        },
-                        "link_from": [
-                            -1,
-                            -2
-                        ]
+                        }
                     }
                 ]
             }
